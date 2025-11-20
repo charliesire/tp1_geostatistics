@@ -7542,7 +7542,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="On-importe-les-libraries-n%C3%A9cessaires">On importe les libraries nécessaires<a class="anchor-link" href="#On-importe-les-libraries-n%C3%A9cessaires">¶</a></h3>
+<h3 id="On-importe-les-libraries-n%C3%A9cessaires">On importe les libraries nécessaires<a class="anchor-link" href="#On-importe-les-libraries-n%C3%A9cessaires">¶</a></h3><p>Vous devrez probablement télécharger certaines librairies. Exemple : pip install pandas</p>
 </div>
 </div>
 </div>
@@ -7567,6 +7567,21 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aac5aa7d-160f-4bb7-b318-39e02f53f8a2">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>La cellule ci-dessous ne concerne que les élèves sur google colab</p>
+</div>
+</div>
+</div>
+</div>!git clone https://github.com/CharlieSire/tp1_geostatistics.git repo_tmp
+
+!cp -r repo_tmp/* .
+
+!rm -rf repo_tmp
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c14c5510-8180-42b2-82d2-a500dc617632">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7629,8 +7644,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data_1.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#les données à prédire</span>
-<span class="n">df_obs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"df_obs_1.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#les données d'observation</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/data_1.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#les données à prédire</span>
+<span class="n">df_obs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/df_obs_1.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#les données d'observation</span>
 <span class="n">plot_data</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">df_obs</span><span class="p">,</span> <span class="n">titre</span> <span class="o">=</span> <span class="s2">"Vraies valeurs"</span><span class="p">)</span> <span class="c1">#afficher les données à predire</span>
 </pre></div>
 </div>
@@ -7967,7 +7982,7 @@ $$</p>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>0.46540457880590397
 0.46825869322136443
-0.4030511743923932
+0.40305117439239313
 </pre>
 </div>
 </div>
@@ -8020,7 +8035,7 @@ $$</p>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[&lt;matplotlib.lines.Line2D at 0x1b81e642a20&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x200774b4b50&gt;]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8067,7 +8082,7 @@ $$</p>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[&lt;matplotlib.lines.Line2D at 0x1b81c32ade0&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x200777f1090&gt;]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8178,8 +8193,8 @@ $$</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_condu</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data_conductivity.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>  <span class="c1">#les données à prédire</span>
-<span class="n">df_obs_condu</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"df_obs_conductivity.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#les données d'observation</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_condu</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/data_conductivity.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>  <span class="c1">#les données à prédire</span>
+<span class="n">df_obs_condu</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/df_obs_conductivity.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#les données d'observation</span>
 <span class="n">plot_data</span><span class="p">(</span><span class="n">df_condu</span><span class="p">,</span><span class="n">df_obs</span> <span class="o">=</span> <span class="n">df_obs_condu</span><span class="p">,</span> <span class="n">titre</span> <span class="o">=</span> <span class="s2">"Vraie valeurs"</span><span class="p">)</span> <span class="c1">#afficher les données à prédire</span>
 </pre></div>
 </div>
@@ -8277,7 +8292,7 @@ $$</p>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[&lt;matplotlib.lines.Line2D at 0x1b81f88c770&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x20077601b50&gt;]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8405,9 +8420,9 @@ La fonction dist_point_obs_earth calcule prend en argument un point x défini pa
 <div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_temp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"df_temperature.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#données à prédire</span>
-<span class="n">df_obs_temp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"df_obs_temperature.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#données d'observations</span>
-<span class="n">df_3points</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"df_temperature_3points.csv"</span><span class="p">)</span> <span class="c1"># 3 points A,B et C pour lesquels on a des données de température au cours du mois de février</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_temp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/df_temperature.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#données à prédire</span>
+<span class="n">df_obs_temp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/df_obs_temperature.csv"</span><span class="p">)</span><span class="o">.</span><span class="n">values</span> <span class="c1">#données d'observations</span>
+<span class="n">df_3points</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"data/df_temperature_3points.csv"</span><span class="p">)</span> <span class="c1"># 3 points A,B et C pour lesquels on a des données de température au cours du mois de février</span>
 
 <span class="n">plot_data</span><span class="p">(</span><span class="n">df_temp</span><span class="p">,</span><span class="n">df_obs</span> <span class="o">=</span> <span class="n">df_obs_temp</span><span class="p">,</span> <span class="n">titre</span> <span class="o">=</span> <span class="s2">"Vraies valeurs"</span><span class="p">)</span> <span class="c1">#Visualisation des données à prédire</span>
 </pre></div>
@@ -8798,7 +8813,7 @@ Ce qui semble apparaître ici, c'est que des écarts de latitude sont beaucoup p
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[&lt;matplotlib.lines.Line2D at 0x1b81e426840&gt;]</pre>
+<pre>[&lt;matplotlib.lines.Line2D at 0x200778b0a10&gt;]</pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -8934,7 +8949,7 @@ $$d(\mathbf{x},\mathbf{y}) = \sqrt{\lvert x_1 - x_2\rvert^2 + \omega\lvert y_1 -
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">func_rmse_bis</span><span class="p">(</span><span class="n">w</span><span class="p">):</span> <span class="c1">#On va vouloir optimiser cette fonction de omega, qui pour chaque omega donne la RMSE associée</span>
@@ -8980,7 +8995,7 @@ $$d(\mathbf{x},\mathbf{y}) = \sqrt{\lvert x_1 - x_2\rvert^2 + \omega\lvert y_1 -
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pred_invdist_bis</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">apply_along_axis</span><span class="p">(</span><span class="k">lambda</span> <span class="n">point</span><span class="p">:</span> <span class="n">inverse_distance_bis</span><span class="p">(</span><span class="n">point</span><span class="p">,</span><span class="n">alpha_opt</span><span class="p">,</span><span class="n">df_obs_temp</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <span class="n">weight_opt</span><span class="p">),</span> <span class="mi">1</span><span class="p">,</span> <span class="n">df_temp</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">])</span> <span class="c1">#On calcule la prédiction avec le coefficient omega optimal</span>
@@ -9009,7 +9024,7 @@ $$d(\mathbf{x},\mathbf{y}) = \sqrt{\lvert x_1 - x_2\rvert^2 + \omega\lvert y_1 -
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">gain_relatif</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">RMSE_bis</span><span class="o">-</span><span class="n">RMSE_standard</span><span class="p">)</span><span class="o">/</span><span class="n">RMSE_standard</span> <span class="c1">#Ecart relatif entre la RMSE obtenue initialement et la RMSE obtenue avec notre nouvelle distance</span>
@@ -9028,6 +9043,20 @@ $$d(\mathbf{x},\mathbf{y}) = \sqrt{\lvert x_1 - x_2\rvert^2 + \omega\lvert y_1 -
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>0.03745038234940741
 </pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dab91433-2466-42ce-ad34-8e36da91dabc">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 </div>
 </div>
 </div>
